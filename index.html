@@ -18,33 +18,54 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#">BrickLinks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-1.png" alt="BrickLinks Marketing Agency Logo" width="80" height="80" class="me-2">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Services dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-paint-brush me-2"></i>Web Design</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-code me-2"></i>Web Development</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt me-2"></i>App
+                                    Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Digital
+                                    Marketing</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-search me-2"></i>SEO Optimization</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary d-block" href="#">Get Started</a>
                     </li>
                 </ul>
             </div>
@@ -236,156 +257,169 @@
     <!--Project-->
 
     <section class="masonry-section" id="projects">
-    <!-- Floating hexagon elements -->
-    <div class="floating-hex"></div>
-    <div class="floating-hex"></div>
-    <div class="floating-hex"></div>
-    
-    <div class="container">
-        <h2>Our Projects</h2>
-        <p class="section-subtitle">Explore our creative solutions and successful projects that have helped businesses grow</p>
-        
-        <div class="masonry-grid">
-            <!-- Project 1 -->
-            <div class="masonry-item">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Digital Marketing">
-                <div class="masonry-overlay">
-                    <h4>Digital Marketing</h4>
-                    <p>Comprehensive digital marketing strategy that increased client revenue by 187% in 6 months.</p>
-                    <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+        <!-- Floating hexagon elements -->
+        <div class="floating-hex"></div>
+        <div class="floating-hex"></div>
+        <div class="floating-hex"></div>
+
+        <div class="container">
+            <h2>Our Projects</h2>
+            <p class="section-subtitle">Explore our creative solutions and successful projects that have helped
+                businesses grow</p>
+
+            <div class="masonry-grid">
+                <!-- Project 1 -->
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Digital Marketing">
+                    <div class="masonry-overlay">
+                        <h4>Digital Marketing</h4>
+                        <p>Comprehensive digital marketing strategy that increased client revenue by 187% in 6 months.
+                        </p>
+                        <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Analytics Dashboard">
+                    <div class="masonry-overlay">
+                        <h4>Analytics Dashboard</h4>
+                        <p>Real-time analytics dashboard with custom reporting and data visualization for marketing
+                            agencies.</p>
+                        <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Social Media Management">
+                    <div class="masonry-overlay">
+                        <h4>Social Media Management</h4>
+                        <p>Social media management platform for brands to schedule, analyze, and optimize their social
+                            presence.</p>
+                        <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="Brand Identity">
+                    <div class="masonry-overlay">
+                        <h4>Brand Identity</h4>
+                        <p>Complete brand identity development including logo, style guide, and visual assets for tech
+                            startups.</p>
+                        <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="AI Analytics">
+                    <div class="masonry-overlay">
+                        <h4>AI Analytics</h4>
+                        <p>AI-powered predictive insights platform for marketing trend analysis and campaign
+                            optimization.</p>
+                        <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="E-commerce Solution">
+                    <div class="masonry-overlay">
+                        <h4>E-commerce Solution</h4>
+                        <p>E-commerce platform for sustainable products with focus on UX and conversion rate
+                            optimization.</p>
+                        <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Project 2 -->
-            <div class="masonry-item">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Analytics Dashboard">
-                <div class="masonry-overlay">
-                    <h4>Analytics Dashboard</h4>
-                    <p>Real-time analytics dashboard with custom reporting and data visualization for marketing agencies.</p>
-                    <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Project 3 -->
-            <div class="masonry-item">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Social Media Management">
-                <div class="masonry-overlay">
-                    <h4>Social Media Management</h4>
-                    <p>Social media management platform for brands to schedule, analyze, and optimize their social presence.</p>
-                    <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-            <div class="masonry-item">
-                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Brand Identity">
-                <div class="masonry-overlay">
-                    <h4>Brand Identity</h4>
-                    <p>Complete brand identity development including logo, style guide, and visual assets for tech startups.</p>
-                    <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Project 5 -->
-            <div class="masonry-item">
-                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="AI Analytics">
-                <div class="masonry-overlay">
-                    <h4>AI Analytics</h4>
-                    <p>AI-powered predictive insights platform for marketing trend analysis and campaign optimization.</p>
-                    <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Project 6 -->
-            <div class="masonry-item">
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="E-commerce Solution">
-                <div class="masonry-overlay">
-                    <h4>E-commerce Solution</h4>
-                    <p>E-commerce platform for sustainable products with focus on UX and conversion rate optimization.</p>
-                    <a href="#" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
+
+            <div class="view-more">
+                <a href="#" class="project-btn">View All Projects <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        
-        <div class="view-more">
-            <a href="#" class="project-btn">View All Projects <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-   
+    </section>
+
     <!-- Trusted Companies Section -->
     <section class="companies-section py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="welcome-title">Companies that Trusted Us</h2>
-                    <p class="lead text-white">Trusted by Leading Companies</p>
+                    <h2 class="section-title animate-on-scroll welcome-title">Companies that Trusted Us</h2>
+                    <p class="lead animate-on-scroll">Trusted by Leading Companies</p>
                 </div>
             </div>
 
             <div class="scrolling-banner-container">
                 <div class="scrolling-banner">
                     <!-- First set of logos -->
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/truck-it-in.png" alt="trucktin" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/square-nine.png" alt="squarenine" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/indrive.png" alt="indrive" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/careem.png" alt="careem" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/daraz.jfif" alt="daraz" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/bykea.png" alt="bykea" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/optcl.jfif" alt="optcl" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/graana.jfif" alt="graana" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/agency21.png" alt="agency21" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/zameen.png" alt="zameen" class="img-fluid">
                     </div>
 
                     <!-- Duplicate set for seamless looping -->
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/truck-it-in.png" alt="trucktin" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/square-nine.png" alt="squarenine" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/indrive.png" alt="indrive" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/careem.png" alt="careem" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/daraz.jfif" alt="daraz" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/bykea.png" alt="bykea" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/optcl.jfif" alt="optcl" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/graana.jfif" alt="graana" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/agency21.png" alt="agency21" class="img-fluid">
                     </div>
-                    <div class="company-logo">
+                    <div class="company-logo animate-on-scroll">
                         <img src="./img/zameen.png" alt="zameen" class="img-fluid">
                     </div>
                 </div>
@@ -393,53 +427,111 @@
         </div>
     </section>
 
-
-
-
     <!-- Testimonials Section -->
     <section class="section-padding testimonials">
         <div class="container">
-            <div class="row text-center mb-5 animate-on-scroll">
+            <div class="row text-center mb-5">
                 <div class="col-12">
-                    <h2 class="section-title">What Our Clients Say</h2>
-                    <p class="lead">Success stories from our satisfied clients</p>
+                    <h2 class="section-title animate-on-scroll" style="color: var(--primary);">What Our Clients Say</h2>
+                    <p class="lead animate-on-scroll">Success stories from our satisfied clients</p>
                 </div>
             </div>
 
-            <div class="row text-center">
+            <div class="row">
                 <!-- Column 1 -->
-                <div class="col-md-4 animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                        alt="Michael Chen" class="testimonial-img mb-3">
-                    <h5 class="mb-0">Michael Chen</h5>
-                    <p class="text-muted">CEO, TechStart</p>
-                    <blockquote class="testimonial-quote">
-                        “BrickLinks transformed our online presence. Our traffic increased by 200% and conversions
-                        tripled within 3 months!”
-                    </blockquote>
+                <div class="col-lg-4 col-md-6 testimonial-col">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                alt="Michael Chen" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5 class="testimonial-name">Michael Chen</h5>
+                                <p class="testimonial-role">CEO, TechStart</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <blockquote class="testimonial-quote">
+                            BrickLinks transformed our online presence. Our traffic increased by 200% and conversions
+                            tripled within 3 months!
+                        </blockquote>
+
+                        <div class="testimonial-company">
+                            <img src="https://via.placeholder.com/120x40/EB7444/ffffff?text=TechStart"
+                                alt="TechStart Logo">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Column 2 -->
-                <div class="col-md-4 animate-on-scroll delay-1">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                        alt="Sarah Johnson" class="testimonial-img mb-3">
-                    <h5 class="mb-0">Sarah Johnson</h5>
-                    <p class="text-muted">Marketing Director, FashionStyle</p>
-                    <blockquote class="testimonial-quote">
-                        “The team at BrickLinks truly understands our brand. Their creative campaigns boosted our
-                        engagement and sales massively.”
-                    </blockquote>
+                <div class="col-lg-4 col-md-6 testimonial-col">
+                    <div class="testimonial-card animate-on-scroll delay-1">
+                        <div class="testimonial-header">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                alt="Sarah Johnson" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5 class="testimonial-name">Sarah Johnson</h5>
+                                <p class="testimonial-role">Marketing Director, FashionStyle</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                        <blockquote class="testimonial-quote">
+                            The team at BrickLinks truly understands our brand. Their creative campaigns boosted our
+                            engagement and sales massively.
+                        </blockquote>
+
+                        <div class="testimonial-company">
+                            <img src="https://via.placeholder.com/120x40/EB7444/ffffff?text=FashionStyle"
+                                alt="FashionStyle Logo">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Column 3 -->
-                <div class="col-md-4 animate-on-scroll delay-2">
-                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                        alt="Robert Williams" class="testimonial-img mb-3">
-                    <h5 class="mb-0">Robert Williams</h5>
-                    <p class="text-muted">Founder, GreenFoods</p>
-                    <blockquote class="testimonial-quote">
-                        “Their data-driven approach uncovered new opportunities and maximized ROI. Highly recommended!”
-                    </blockquote>
+                <div class="col-lg-4 col-md-6 testimonial-col mx-md-auto">
+                    <div class="testimonial-card animate-on-scroll delay-2">
+                        <div class="testimonial-header">
+                            <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                alt="Robert Williams" class="testimonial-img">
+                            <div class="testimonial-info">
+                                <h5 class="testimonial-name">Robert Williams</h5>
+                                <p class="testimonial-role">Founder, GreenFoods</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <blockquote class="testimonial-quote">
+                            Their data-driven approach uncovered new opportunities and maximized ROI. Highly
+                            recommended!
+                        </blockquote>
+
+                        <div class="testimonial-company">
+                            <img src="https://via.placeholder.com/120x40/EB7444/ffffff?text=GreenFoods"
+                                alt="GreenFoods Logo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -481,14 +573,14 @@
         </div>
         <!-- floating shapes -->
         <div class="floating-circle"></div>
-        <div class="floating-square"></div>
+        <div class="floating-circle1"></div>
     </section>
 
     <!-- JS for floating shapes -->
     <script>
         document.addEventListener("mousemove", function (e) {
             const circle = document.querySelector(".floating-circle");
-            const square = document.querySelector(".floating-square");
+            const square = document.querySelector(".floating-circle1");
             let x = e.clientX / window.innerWidth;
             let y = e.clientY / window.innerHeight;
 
@@ -515,14 +607,14 @@
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 cta-item">
                     <i class="fas fa-phone-alt cta-icon"></i>
                     <h4>Call Us</h4>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+92 98762531</p>
                 </div>
 
                 <!-- Location -->
                 <div class="col-lg-4 col-md-12 cta-item">
                     <i class="fas fa-map-marker-alt cta-icon"></i>
                     <h4>Visit Us</h4>
-                    <p>123 Marketing Ave, Suite 456<br>New York, NY 10001</p>
+                    <p>123 Islamabad , Pakistan</p>
                 </div>
 
             </div>
@@ -534,7 +626,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
-                    <h4 class="text-white mb-4">BrickLinks</h4>
+                    <h4 class="text-white mb-4">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100" class="me-2 align-middle">
+                    </h4>
                     <p>We are a full-service marketing agency dedicated to helping businesses grow and thrive in the
                         digital age.</p>
                     <div class="social-icons">
@@ -575,8 +669,8 @@
                 <div class="col-lg-4 col-md-4 animate-on-scroll delay-3">
                     <h5 class="footer-links">Contact Info</h5>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Marketing Ave, New York, NY</li>
-                        <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Islamabad , Pakistan</li>
+                        <li><i class="fas fa-phone me-2"></i> +92 987653253</li>
                         <li><i class="fas fa-envelope me-2"></i> info@bricklinks.com</li>
                         <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
                     </ul>
@@ -584,7 +678,7 @@
             </div>
 
             <div class="copyright text-center">
-                <p class="mb-0">&copy; 2023 BrickLinks Marketing. All Rights Reserved.</p>
+                <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -592,48 +686,7 @@
     <!-- Bootstrap & jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-   <script>
-    // Enhanced reveal effect when scrolling
-    const items = document.querySelectorAll(".masonry-item");
-    
-    const revealOnScroll = () => {
-        const triggerBottom = window.innerHeight * 0.85;
-        
-        items.forEach((item, index) => {
-            const boxTop = item.getBoundingClientRect().top;
-            
-            if (boxTop < triggerBottom) {
-                // Stagger the animation with a delay based on index
-                setTimeout(() => {
-                    item.style.opacity = "1";
-                    item.style.transform = "translateY(0)";
-                }, 150 * index);
-            }
-        });
-    };
-
-    // Initial hidden state
-    items.forEach(item => {
-        item.style.opacity = "0";
-        item.style.transform = "translateY(50px)";
-        item.style.transition = "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
-    });
-
-    // Run on load and scroll
-    window.addEventListener("load", revealOnScroll);
-    window.addEventListener("scroll", revealOnScroll);
-    
-    // Additional effect for hexagon pattern on scroll
-    window.addEventListener("scroll", () => {
-        const scrolled = window.pageYOffset;
-        const hexPattern = document.querySelector('.masonry-section::after');
-        const rate = scrolled * -0.2;
-        
-        // Apply parallax effect to hexagon pattern
-        document.querySelector('.masonry-section').style.backgroundPosition = `center ${rate}px`;
-    });
-    </script>
-
+    <!-- Custom JS -->
     <script src="./js/script.js"></script>
 </body>
 
