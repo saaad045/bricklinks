@@ -32,41 +32,52 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
                     <!-- Services dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-paint-brush me-2"></i>Web Design</a>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-paint-brush me-2"></i>Digital
+                                    Marketing</a>
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-code me-2"></i>Web Development</a>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-code me-2"></i>Public Relations</a>
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt me-2"></i>App
-                                    Development</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt me-2"></i>Brand
+                                    Strategy</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <!-- <hr class="dropdown-divider"> -->
                             </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Digital
-                                    Marketing</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-search me-2"></i>SEO Optimization</a>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Creative
+                                    Service</a>
                             </li>
-                        </ul>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-search me-2"></i>Marketing & <br>
+                                    Communication</a>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Content & <br>
+                                    Production</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Website & App
+                                    <br> Development</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Performance
+                                    Marketing</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line me-2"></i>Media Strategies
+                                    & <br> Buying</a>
+                                </li>
                     </li>
-
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-primary d-block" href="#">Get Started</a>
-                    </li>
+                </ul>
+            </li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                    <a class="btn btn-primary d-block" href="#">Get Started</a>
+                </li>
                 </ul>
             </div>
         </div>
@@ -352,8 +363,8 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-title animate-on-scroll welcome-title">Companies that Trusted Us</h2>
-                    <p class="lead animate-on-scroll">Trusted by Leading Companies</p>
+                    <h2 class="section-title animate-on-scroll welcome-title" style="color: var(--primary);">Companies that Trusted Us</h2>
+                    <p class="lead animate-on-scroll" style="color: white;">Trusted by Leading Companies</p>
                 </div>
             </div>
 
@@ -432,18 +443,22 @@
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
-                    <h2 class="section-title animate-on-scroll" style="color: var(--primary);">What Our Clients Say</h2>
-                    <p class="lead animate-on-scroll">Success stories from our satisfied clients</p>
+                    <h2 class="section-title animate-on-scroll" style="color: var(--primary);">
+                        What Our Clients Say
+                    </h2>
+                    <p class="lead animate-on-scroll">
+                        Success stories from our satisfied clients
+                    </p>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row justify-content-center">
                 <!-- Column 1 -->
-                <div class="col-lg-4 col-md-6 testimonial-col">
-                    <div class="testimonial-card animate-on-scroll">
+                <div class="col-lg-4 col-md-4 col-12 testimonial-col d-flex">
+                    <div class="testimonial-card animate-on-scroll w-100">
                         <div class="testimonial-header">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                                alt="Michael Chen" class="testimonial-img">
+                                alt="Michael Chen" class="testimonial-img" />
                             <div class="testimonial-info">
                                 <h5 class="testimonial-name">Michael Chen</h5>
                                 <p class="testimonial-role">CEO, TechStart</p>
@@ -459,26 +474,28 @@
                         </div>
 
                         <blockquote class="testimonial-quote">
-                            BrickLinks transformed our online presence. Our traffic increased by 200% and conversions
-                            tripled within 3 months!
+                            BrickLinks transformed our online presence. Our traffic increased by
+                            200% and conversions tripled within 3 months!
                         </blockquote>
 
                         <div class="testimonial-company">
                             <img src="https://via.placeholder.com/120x40/EB7444/ffffff?text=TechStart"
-                                alt="TechStart Logo">
+                                alt="TechStart Logo" />
                         </div>
                     </div>
                 </div>
 
                 <!-- Column 2 -->
-                <div class="col-lg-4 col-md-6 testimonial-col">
-                    <div class="testimonial-card animate-on-scroll delay-1">
+                <div class="col-lg-4 col-md-4 col-12 testimonial-col d-flex">
+                    <div class="testimonial-card animate-on-scroll delay-1 w-100">
                         <div class="testimonial-header">
                             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                                alt="Sarah Johnson" class="testimonial-img">
+                                alt="Sarah Johnson" class="testimonial-img" />
                             <div class="testimonial-info">
                                 <h5 class="testimonial-name">Sarah Johnson</h5>
-                                <p class="testimonial-role">Marketing Director, FashionStyle</p>
+                                <p class="testimonial-role">
+                                    Marketing Director, FashionStyle
+                                </p>
                             </div>
                         </div>
 
@@ -491,23 +508,23 @@
                         </div>
 
                         <blockquote class="testimonial-quote">
-                            The team at BrickLinks truly understands our brand. Their creative campaigns boosted our
-                            engagement and sales massively.
+                            The team at BrickLinks truly understands our brand. Their creative
+                            campaigns boosted our engagement and sales massively.
                         </blockquote>
 
                         <div class="testimonial-company">
                             <img src="https://via.placeholder.com/120x40/EB7444/ffffff?text=FashionStyle"
-                                alt="FashionStyle Logo">
+                                alt="FashionStyle Logo" />
                         </div>
                     </div>
                 </div>
 
                 <!-- Column 3 -->
-                <div class="col-lg-4 col-md-6 testimonial-col mx-md-auto">
-                    <div class="testimonial-card animate-on-scroll delay-2">
+                <div class="col-lg-4 col-md-4 col-12 testimonial-col d-flex">
+                    <div class="testimonial-card animate-on-scroll delay-2 w-100">
                         <div class="testimonial-header">
                             <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                                alt="Robert Williams" class="testimonial-img">
+                                alt="Robert Williams" class="testimonial-img" />
                             <div class="testimonial-info">
                                 <h5 class="testimonial-name">Robert Williams</h5>
                                 <p class="testimonial-role">Founder, GreenFoods</p>
@@ -523,19 +540,20 @@
                         </div>
 
                         <blockquote class="testimonial-quote">
-                            Their data-driven approach uncovered new opportunities and maximized ROI. Highly
-                            recommended!
+                            Their data-driven approach uncovered new opportunities and maximized
+                            ROI. Highly recommended!
                         </blockquote>
 
                         <div class="testimonial-company">
                             <img src="https://via.placeholder.com/120x40/EB7444/ffffff?text=GreenFoods"
-                                alt="GreenFoods Logo">
+                                alt="GreenFoods Logo" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
     <section class="contact section-padding" id="contact">
@@ -591,46 +609,45 @@
 
 
     <!-- CTA Section -->
-
     <section class="cta-banner">
         <div class="container">
-            <div class="row text-center align-items-center">
-
+            <div class="row text-center align-items-center justify-content-center">
                 <!-- Email -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 cta-item">
+                <div class="col-lg-4 col-md-4 cta-item d-flex flex-column align-items-center">
                     <i class="fas fa-envelope cta-icon"></i>
                     <h4>Email Us</h4>
                     <p>info@bricklinks.com</p>
                 </div>
-
                 <!-- Phone -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 cta-item">
+                <div class="col-lg-4 col-md-4 cta-item d-flex flex-column align-items-center">
                     <i class="fas fa-phone-alt cta-icon"></i>
                     <h4>Call Us</h4>
                     <p>+92 98762531</p>
                 </div>
-
                 <!-- Location -->
-                <div class="col-lg-4 col-md-12 cta-item">
+                <div class="col-lg-4 col-md-4 cta-item d-flex flex-column align-items-center">
                     <i class="fas fa-map-marker-alt cta-icon"></i>
                     <h4>Visit Us</h4>
                     <p>123 Islamabad , Pakistan</p>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer section-padding">
         <div class="container">
             <div class="row">
+                <!-- Logo + About -->
                 <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
                     <h4 class="text-white mb-4">
-                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100" class="me-2 align-middle">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100"
+                            class="me-2 align-middle" />
                     </h4>
-                    <p>We are a full-service marketing agency dedicated to helping businesses grow and thrive in the
-                        digital age.</p>
+                    <p>
+                        We are a full-service marketing agency dedicated to helping
+                        businesses grow and thrive in the digital age.
+                    </p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -639,8 +656,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1">
-                    <h5 class="footer-links">Quick Links</h5>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1 footer-links">
+                    <h5>Quick Links</h5>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Services</a></li>
@@ -651,8 +669,9 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2">
-                    <h5 class="footer-links">Services</h5>
+                <!-- Services -->
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2 footer-links">
+                    <h5>Services</h5>
                     <ul>
                         <li><a href="#">Digital Marketing</a></li>
                         <li><a href="#">Public Relations</a></li>
@@ -666,10 +685,11 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3">
-                    <h5 class="footer-links">Contact Info</h5>
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
+                    <h5>Contact Info</h5>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Islamabad , Pakistan</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Islamabad, Pakistan</li>
                         <li><i class="fas fa-phone me-2"></i> +92 987653253</li>
                         <li><i class="fas fa-envelope me-2"></i> info@bricklinks.com</li>
                         <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
@@ -677,11 +697,13 @@
                 </div>
             </div>
 
+            <!-- Copyright -->
             <div class="copyright text-center">
                 <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
 
     <!-- Bootstrap & jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
