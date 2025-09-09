@@ -6288,7 +6288,7 @@ background-size: cover;
 
 /* Responsive */
 @media (max-width: 992px) {
-  .service6Mark-hero-title {
+  .serviceMark-hero-title {
     font-size: 2.8rem;
   }
 
@@ -6298,18 +6298,18 @@ background-size: cover;
 }
 
 @media (max-width: 768px) {
-  .service6Mark-hero-title {
+  .serviceMark-hero-title {
     font-size: 2.2rem;
   }
 
-  .service6Mark-hero {
+  .serviceMark-hero {
     height: 60vh;
     margin-top: 70px;
   }
 }
 
 @media (max-width: 576px) {
-  .service6Mark-hero-title {
+  .serviceMark-hero-title {
     font-size: 1.8rem;
   }
 }
