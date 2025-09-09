@@ -199,7 +199,7 @@
             <div class="row">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="tech-category">
-                        <h4 class="mb-4">Frontend Development</h4>
+                        <h4 class="mb-4" style="color: black;">Frontend Development</h4>
                         <div class="tech-item">
                             <div class="tech-icon"><i class="fab fa-react"></i></div>
                             <h5>React.js</h5>
@@ -219,7 +219,7 @@
                 </div>
                 <div class="col-md-4 animate-on-scroll delay-1">
                     <div class="tech-category">
-                        <h4 class="mb-4">Backend Development</h4>
+                        <h4 class="mb-4" style="color: black;">Backend Development</h4>
                         <div class="tech-item">
                             <div class="tech-icon"><i class="fab fa-node-js"></i></div>
                             <h5>Node.js</h5>
@@ -239,7 +239,7 @@
                 </div>
                 <div class="col-md-4 animate-on-scroll delay-2">
                     <div class="tech-category">
-                        <h4 class="mb-4">Mobile Development</h4>
+                        <h4 class="mb-4" style="color: black;">Mobile Development</h4>
                         <div class="tech-item">
                             <div class="tech-icon"><i class="fab fa-apple"></i></div>
                             <h5>iOS Development</h5>
@@ -387,7 +387,6 @@
     </div>
 </section>
 
- <!-- Responsive Design -->
     <!-- Responsive Design -->
 <section class="responsive-design">
     <div class="container">
@@ -456,7 +455,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
+  <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
@@ -483,7 +482,6 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
                         <li><a href="contact-us.html">Contact</a></li>
                     </ul>
                 </div>
@@ -492,23 +490,24 @@
                     <h5>Services</h5>
                     <ul>
                         <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="#">Public Relations</a></li>
-                        <li><a href="#">Brand Strategy</a></li>
-                        <li><a href="#">Creative Service</a></li>
-                        <li><a href="#">Marketing & Communication</a></li>
-                        <li><a href="#">Content and Production</a></li>
-                        <li><a href="#">Website & App Development</a></li>
-                        <li><a href="#">Performance Marketing</a></li>
-                        <li><a href="#">Media Strategies & Buying</a></li>
+                        <li><a href="public-relations.html">Public Relations</a></li>
+                        <li><a href="brand-strategy.html">Brand Strategy</a></li>
+                        <li><a href="creative-services.html">Creative Service</a></li>
+                        <li><a href="marketing-and-communication.html">Marketing & Communication</a></li>
+                        <li><a href="content-and-production.html">Content and Production</a></li>
+                        <li><a href="website-and-app-development.html">Website & App Development</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="media-strategies-and-buying.html">Media Strategies & Buying</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
                     <h5>Contact Info</h5>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Islamabad, Pakistan</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Office#211 ,2nd Floor,Aura Square, <br> F11
+                            Markaz, Islamabad, Pakistan</li>
                         <li><i class="fas fa-phone me-2"></i> +92 987653253</li>
-                        <li><i class="fas fa-envelope me-2"></i> info@bricklinks.com</li>
+                        <li><i class="fas fa-envelope me-2"></i> bricklinks.marketing@gmail.com</li>
                         <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
                     </ul>
                 </div>
@@ -526,28 +525,7 @@
     <!--Custom Js-->
     <script src="./js/script.js"></script>
     <script>
-    const deviceImage = document.getElementById("deviceImage");
-
-    document.querySelectorAll(".device-card").forEach(card => {
-        card.addEventListener("click", () => {
-            const deviceType = card.getAttribute("data-device");
-
-            // Reset transform
-            deviceImage.style.transform = "scale(1)";
-
-            if (deviceType === "desktop") {
-                deviceImage.style.transform = "scale(1)"; // Normal size
-            } else if (deviceType === "tablet") {
-                deviceImage.style.transform = "scale(0.7)"; // Smaller
-            } else if (deviceType === "mobile") {
-                deviceImage.style.transform = "scale(0.4)"; // Smallest
-            }
-
-            // Active state
-            document.querySelectorAll(".device-card").forEach(c => c.classList.remove("active"));
-            card.classList.add("active");
-        });
-    });
+   
 </script>
 
 </body>
