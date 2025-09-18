@@ -91,6 +91,19 @@ h6 {
   margin-top: 10px;
   transition: all 0.3s ease;
   border-left: 4px solid var(--primary);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dropdown-item {
@@ -98,6 +111,8 @@ h6 {
   transition: all 0.2s ease;
   position: relative;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-item:hover {
@@ -134,7 +149,43 @@ h6 {
   margin-top: 0;
 }
 
+/* Custom toggler styles */
+.custom-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
 
+.custom-toggler:hover {
+  transform: scale(1.1);
+}
+
+.toggler-icon {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 6px 0;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.custom-toggler:not(.collapsed) .top-bar {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.custom-toggler:not(.collapsed) .middle-bar {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.custom-toggler:not(.collapsed) .bottom-bar {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 /* Capsule style when scrolled */
 .navbar.scrolled {
   width: 90%;
@@ -175,37 +226,6 @@ h6 {
   }
 }
 
-/* Custom toggler styles */
-.custom-toggler {
-  border: none;
-  background: transparent;
-  outline: none;
-  padding: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.toggler-icon {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: var(--primary);
-  /* change color if needed */
-  margin: 5px 0;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-}
-
-.custom-toggler:not(.collapsed) .top-bar {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.custom-toggler:not(.collapsed) .middle-bar {
-  opacity: 0;
-}
-
-.custom-toggler:not(.collapsed) .bottom-bar {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
 
 /* Hero Section */
 .hero {
