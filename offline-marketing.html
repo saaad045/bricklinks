@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Marketing Services | BrickLinks Marketing</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="./css/master.css">
+    <style>
+        
+        /* Hero Section */
+        .offline-hero {
+            height: 70vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .offline-hero-content {
+            position: relative;
+            z-index: 2;
+            color: var(--white);
+        }
+
+        .offline-hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        /* Section Common Styles */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Service Intro */
+        .service-intro-content {
+            padding-right: 40px;
+        }
+
+        .service-intro-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--primary);
+            line-height: 1.3;
+        }
+
+        .service-intro-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .service-intro-content .btn {
+            margin-top: 15px;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .service-intro-content .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Image styling */
+        .service-intro-image {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-intro-image img {
+            transition: transform 0.5s ease, filter 0.5s ease;
+            width: 100%;
+            display: block;
+        }
+
+        .service-intro-image:hover img {
+            transform: scale(1.07);
+            filter: brightness(1.05);
+        }
+
+        /* Services Section */
+        .services-section {
+            background-color: var(--dark-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(235, 116, 68, 0.03) 0%, transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(235, 116, 68, 0.03) 0%, transparent 25%);
+            z-index: 1;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+            border-radius: 15px;
+            padding: 40px 30px;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: translateY(0) scale(1);
+            color: var(--text-light);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(235, 116, 68, 0.2);
+        }
+
+        .service-icon {
+            font-size: 55px;
+            color: white;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+            display: inline-block;
+            position: relative;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.15);
+        }
+
+        .service-card h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--white);
+            position: relative;
+            display: inline-block;
+        }
+
+        .service-card h4::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.4s ease;
+        }
+
+        .service-card:hover h4::after {
+            width: 100%;
+        }
+
+        .service-card p {
+            color: whitesmoke;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+
+        /* Process Section */
+        .process-section {
+            background: linear-gradient(rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.95)), url('https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .process-step {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-step h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .process-step p {
+            color: whitesmoke;
+            line-height: 1.6;
+        }
+
+        /* Channels Section */
+        .channels-section {
+            background-color: var(--dark-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .channel-card {
+            background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 100%;
+        }
+
+        .channel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border-color: rgba(235, 116, 68, 0.2);
+        }
+
+        .channel-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .channel-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .channel-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+        /* Responsive Design */
+        @media (max-width: 991.98px) {
+            .offline-hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .offline-intro-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .offline-hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+            
+            .service-intro-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-1.png" alt="BrickLinks Marketing Agency Logo" width="80" height="80" class="me-2">
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropdown" role="button" href="#">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="AboutDropdown">
+                            <li><a class="dropdown-item" href="about.html"><i class="fas fa-users me-2"></i>About Us</a>
+                            </li>
+                            <li><a class="dropdown-item" href="our-clients.html"><i
+                                        class="fas fa-handshake me-2"></i>Our Clients</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html"><i
+                                        class="fas fa-comment-dots me-2"></i>Testimonials</a></li>
+                            <li><a class="dropdown-item" href="blog.html"><i class="fas fa-blog me-2"></i>Our Blogs</a>
+                            </li>
+                            <li><a class="dropdown-item" href="team.html"><i class="fas fa-users me-2"></i>Our Team</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Marketing Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="MarketingDropdown" role="button" href="#">
+                            Marketing
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="MarketingDropdown">
+                            <li><a class="dropdown-item" href="digital-marketing.html"><i
+                                        class="fas fa-paint-brush me-2"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="social-media-marketing.html"><i
+                                        class="fas fa-code me-2"></i>Social Media Marketing</a></li>
+                            <li><a class="dropdown-item" href="performance-marketing.html"><i
+                                        class="fas fa-mobile-alt me-2"></i>Performance Marketing</a></li>
+                            <li><a class="dropdown-item" href="offline-marketing.html"><i
+                                        class="fa-solid fa-square-poll-vertical me-2"></i>Offline Marketing</a></li>
+                            <li><a class="dropdown-item" href="marketing-and-communication.html"><i
+                                        class="fas fa-search me-2"></i>Marketing & Communication</a></li>
+                            <li><a class="dropdown-item" href="media-strategies-and-buying.html"><i
+                                        class="fas fa-ad me-2"></i>Media Strategies & Buying</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Creative Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CreativeDropdown" role="button" href="#">
+                            Creative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="CreativeDropdown">
+                            <li><a class="dropdown-item" href="creative-services.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Creative Services</a></li>
+                            <li><a class="dropdown-item" href="brand-strategy.html"><i
+                                        class="fas fa-bullseye me-2"></i>Brand Strategies</a></li>
+                            <li><a class="dropdown-item" href="public-relations.html"><i
+                                        class="fas fa-bullhorn me-2"></i>Public Relations</a></li>
+                            <li><a class="dropdown-item" href="content-and-production.html"><i
+                                        class="fas fa-film me-2"></i>Content and Production</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Web Design Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="WebDesignDropdown" role="button" href="#">
+                            Web Design
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="WebDesignDropdown">
+                            <li><a class="dropdown-item" href="website-and-app-development.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Website & App Development</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Portfolio Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="PortfolioDropdown" role="button" href="#">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                            <li><a class="dropdown-item" href="portfolio.html"><i class="fas fa-briefcase me-2"></i>Our
+                                    Portfolio</a></li>
+                            <li><a class="dropdown-item" href="case-study-truckitin.html"><i
+                                        class="fas fa-truck-moving me-2"></i>Case Study Truckitin</a></li>
+                            <li><a class="dropdown-item" href="case-study-indrive.html"><i
+                                        class="fas fa-car-side me-2"></i>Case Study InDrive</a></li>
+                            <li><a class="dropdown-item" href="case-study-careem.html"><i
+                                        class="fas fa-taxi me-2"></i>Case Study Careem</a></li>
+                            <li><a class="dropdown-item" href="case-study-haochi.html"><i
+                                        class="fas fa-cocktail me-2"></i>Case Study Haochi</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+
+                    <!-- Get Started Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary d-block" href="contact-us.html">Get Started</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container service-hero-content">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <br>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Offline Marketing</li>
+                        </ol>
+                    </nav>
+                    <h1 class="service-hero-title animate-on-scroll">Offline Marketing</h1>
+                    <p class="lead animate-on-scroll delay-1">Connecting with your audience through tangible, real-world experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+92 302 5098887" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Service Intro Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="service-intro-content">
+                        <h2>Tangible Marketing That Makes an Impact</h2>
+                        <p>
+                            In a digital world, offline marketing creates memorable, tangible connections with your audience. Our offline marketing strategies combine traditional techniques with modern insights to create campaigns that capture attention, build trust, and drive real-world action.
+                        </p>
+                        <p>From print media to experiential marketing, we create comprehensive offline campaigns that complement your digital efforts and provide a complete marketing ecosystem for your brand.</p>
+                        <a href="contact-us.html" class="btn btn-primary mt-3">Develop Your Offline Strategy</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll delay-1">
+                    <div class="service-intro-image">
+                        <img src="https://www.techjuice.pk/wp-content/uploads/2021/11/Careem-SmogKits.jpg"
+                            alt="Offline Marketing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding services-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" style="color: var(--primary);">Our Offline Marketing Services</h2>
+                    <p class="lead">Comprehensive traditional marketing solutions for the modern world</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h4>Print Advertising</h4>
+                        <p>Strategic placement in newspapers, magazines, journals, and other print publications to reach targeted audiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-1">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <h4>TV & Radio Commercials</h4>
+                        <p>Creative broadcast advertising that captures attention and delivers your message to mass audiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-2">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <h4>Outdoor Advertising</h4>
+                        <p>Billboards, transit ads, and other outdoor media placements for high-visibility brand exposure.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-1">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Event Marketing</h4>
+                        <p>Planning and executing trade shows, conferences, and corporate events to engage directly with your audience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-2">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h4>Direct Mail Campaigns</h4>
+                        <p>Targeted physical mailers, catalogs, and promotional materials that stand out in the mailbox.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Experiential Marketing</h4>
+                        <p>Creating immersive brand experiences that allow consumers to interact with your products and services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-padding process-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" style="color: var(--primary);">Our Offline Marketing Process</h2>
+                    <p class="lead">A strategic approach to traditional marketing success</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Audience Analysis</h4>
+                        <p>We research your target audience's offline behaviors, media consumption, and geographic patterns.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-1">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Channel Selection</h4>
+                        <p>We identify the most effective offline channels to reach your audience based on your goals and budget.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-2">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Creative Development</h4>
+                        <p>Our team designs compelling offline materials that align with your brand identity and campaign objectives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-3">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Implementation & Tracking</h4>
+                        <p>We execute your campaign and implement tracking mechanisms to measure ROI and effectiveness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section class="section-padding channels-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" style="color: var(--primary);">Offline Marketing Channels</h2>
+                    <p class="lead">Leveraging traditional media for maximum impact</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h4>Print Media</h4>
+                        <p>Newspapers, magazines, industry journals, and specialty publications for targeted reach.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-1">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h4>Broadcast Media</h4>
+                        <p>Television and radio commercials that build brand awareness and reach mass audiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-2">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <i class="fas fa-billboard"></i>
+                        </div>
+                        <h4>Out-of-Home</h4>
+                        <p>Billboards, transit ads, street furniture, and other outdoor advertising formats.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-1">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h4>Direct Mail</h4>
+                        <p>Personalized physical mailers, catalogs, and promotional materials with measurable response mechanisms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-2">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h4>Events & Sponsorships</h4>
+                        <p>Trade shows, conferences, community events, and strategic sponsorships for direct engagement.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll delay-3">
+                    <div class="channel-card">
+                        <div class="channel-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h4>Point-of-Sale</h4>
+                        <p>In-store displays, packaging, and promotional materials that influence purchasing decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-section p-5">
+                <div class="cta-content">
+                    <h2 class="mb-4">Ready to build your brand?</h2>
+                    <p class="lead mb-4">Let's work together to create marketing strategies that deliver real results.
+                    </p>
+                    <a href="contact-us.html" class="btn btn-light btn-lg">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
+                    <h4 class="text-white mb-4">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100"
+                            class="me-2 align-middle" />
+                    </h4>
+                    <p>
+                        We are a full-service marketing agency dedicated to helping
+                        businesses grow and thrive in the digital age.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2 footer-links">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="public-relations.html">Public Relations</a></li>
+                        <li><a href="brand-strategy.html">Brand Strategy</a></li>
+                        <li><a href="creative-services.html">Creative Service</a></li>
+                        <li><a href="marketing-and-communication.html">Marketing & Communication</a></li>
+                        <li><a href="content-and-production.html">Content and Production</a></li>
+                        <li><a href="website-and-app-development.html">Website & App Development</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="media-strategies-and-buying.html">Media Strategies & Buying</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Office#211 ,2nd Floor,Aura Square, <br> F11
+                            Markaz, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone me-2"></i>+92 302 5098887</li>
+                        <li><i class="fas fa-envelope me-2"></i> bricklinks.marketing@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+      <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+    
+</body>
+
+</html>

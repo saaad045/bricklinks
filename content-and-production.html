@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content & Production Services | BrickLinks Marketing</title>
+  <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/master.css">
+
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-1.png" alt="BrickLinks Marketing Agency Logo" width="80" height="80" class="me-2">
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropdown" role="button" href="#">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="AboutDropdown">
+                            <li><a class="dropdown-item" href="about.html"><i class="fas fa-users me-2"></i>About Us</a>
+                            </li>
+                            <li><a class="dropdown-item" href="our-clients.html"><i
+                                        class="fas fa-handshake me-2"></i>Our Clients</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html"><i
+                                        class="fas fa-comment-dots me-2"></i>Testimonials</a></li>
+                            <li><a class="dropdown-item" href="blog.html"><i class="fas fa-blog me-2"></i>Our Blogs</a>
+                            </li>
+                            <li><a class="dropdown-item" href="team.html"><i class="fas fa-users me-2"></i>Our Team</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Marketing Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="MarketingDropdown" role="button" href="#">
+                            Marketing
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="MarketingDropdown">
+                            <li><a class="dropdown-item" href="digital-marketing.html"><i
+                                        class="fas fa-paint-brush me-2"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="social-media-marketing.html"><i
+                                        class="fas fa-code me-2"></i>Social Media Marketing</a></li>
+                            <li><a class="dropdown-item" href="performance-marketing.html"><i
+                                        class="fas fa-mobile-alt me-2"></i>Performance Marketing</a></li>
+                            <li><a class="dropdown-item" href="offline-marketing.html"><i
+                                        class="fa-solid fa-square-poll-vertical me-2"></i>Offline Marketing</a></li>
+                            <li><a class="dropdown-item" href="marketing-and-communication.html"><i
+                                        class="fas fa-search me-2"></i>Marketing & Communication</a></li>
+                            <li><a class="dropdown-item" href="media-strategies-and-buying.html"><i
+                                        class="fas fa-ad me-2"></i>Media Strategies & Buying</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Creative Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CreativeDropdown" role="button" href="#">
+                            Creative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="CreativeDropdown">
+                            <li><a class="dropdown-item" href="creative-services.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Creative Services</a></li>
+                            <li><a class="dropdown-item" href="brand-strategy.html"><i
+                                        class="fas fa-bullseye me-2"></i>Brand Strategies</a></li>
+                            <li><a class="dropdown-item" href="public-relations.html"><i
+                                        class="fas fa-bullhorn me-2"></i>Public Relations</a></li>
+                            <li><a class="dropdown-item" href="content-and-production.html"><i
+                                        class="fas fa-film me-2"></i>Content and Production</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Web Design Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="WebDesignDropdown" role="button" href="#">
+                            Web Design
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="WebDesignDropdown">
+                            <li><a class="dropdown-item" href="website-and-app-development.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Website & App Development</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Portfolio Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="PortfolioDropdown" role="button" href="#">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                            <li><a class="dropdown-item" href="portfolio.html"><i class="fas fa-briefcase me-2"></i>Our
+                                    Portfolio</a></li>
+                            <li><a class="dropdown-item" href="case-study-truckitin.html"><i
+                                        class="fas fa-truck-moving me-2"></i>Case Study Truckitin</a></li>
+                            <li><a class="dropdown-item" href="case-study-indrive.html"><i
+                                        class="fas fa-car-side me-2"></i>Case Study InDrive</a></li>
+                            <li><a class="dropdown-item" href="case-study-careem.html"><i
+                                        class="fas fa-taxi me-2"></i>Case Study Careem</a></li>
+                            <li><a class="dropdown-item" href="case-study-haochi.html"><i
+                                        class="fas fa-cocktail me-2"></i>Case Study Haochi</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+
+                    <!-- Get Started Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary d-block" href="contact-us.html">Get Started</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container service-hero-content">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Content & Production</li>
+                        </ol>
+                    </nav>
+                    <h1 class="service-hero-title animate-on-scroll">Content & Production</h1>
+                    <p class="lead animate-on-scroll delay-1">High-quality content creation and production services that
+                        engage and convert your audience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+92 302 5098887" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll">
+                    <h2 class="mb-4">Compelling Content That Converts</h2>
+                    <p class="lead mb-4">We create engaging, high-quality content that tells your brand story and drives
+                        meaningful results.</p>
+                    <p>Our content and production services combine strategic thinking with creative excellence to
+                        develop assets that resonate with your audience. From concept to execution, we ensure every
+                        piece of content aligns with your brand and business objectives.</p>
+                    <div class="mt-5">
+                        <a href="contact-us.html" class="btn btn-primary me-3">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll delay-1">
+                    <div class="service-image">
+                        <img src="https://i.pinimg.com/736x/ec/82/21/ec822168d97e0e484a528c6ed1e98d57.jpg"
+                            alt="Content Creation Process">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="what-we-offer" id="services">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3" style="color: var(--primary);">Our Content & Production Services</h2>
+                    <p class="lead">Comprehensive solutions to tell your brand story effectively</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-pencil-alt"></i></div>
+                        <h4>Content Strategy</h4>
+                        <p>Develop comprehensive content plans that align with your business goals and audience needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-1">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-video"></i></div>
+                        <h4>Video Production</h4>
+                        <p>Create compelling video content from concept development to final editing and distribution.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-2">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-camera"></i></div>
+                        <h4>Photography</h4>
+                        <p>Professional photography services for products, events, and brand storytelling.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-blog"></i></div>
+                        <h4>Blog & Article Writing</h4>
+                        <p>Engaging written content that establishes thought leadership and drives SEO results.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-1">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-podcast"></i></div>
+                        <h4>Audio Production</h4>
+                        <p>Professional podcast and audio content production with crystal clear sound quality.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-2">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Content Analytics</h4>
+                        <p>Measure and optimize content performance with detailed insights and recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Types -->
+    <section class="content-types">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3">Content Types We Specialize In</h2>
+                    <p class="lead">Diverse content formats to engage your audience across platforms</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="content-card">
+                        <h4>Video Content</h4>
+                        <p>From explainer videos to brand stories, we create video content that captivates and converts.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-1">
+                    <div class="content-card">
+                        
+                        <h4>Written Content</h4>
+                        <p>Blog posts, articles, whitepapers, and copywriting that engages and informs your audience.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-2">
+                    <div class="content-card">
+                        <h4>Visual Content</h4>
+                        <p>Infographics, illustrations, and visual assets that make complex information easily
+                            digestible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trusted Companies Section -->
+    <section class="companies-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title animate-on-scroll welcome-title" style="color: var(--primary);">Companies
+                        that Trusted Us</h2>
+                    <p class="lead animate-on-scroll" style="color: white;">Trusted by Leading Companies</p>
+                </div>
+            </div>
+
+            <div class="scrolling-banner-container">
+                <div class="scrolling-banner">
+                    <!-- First set of logos -->
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/truckitin.png" alt="trucktin" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/indrive.png" alt="indrive" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/careem.png" alt="careem" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/daraz.png" alt="daraz" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/bykea.png" alt="bykea" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/ptcl.png" alt="optcl" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/graana.png" alt="graana" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/agency21.jpg" alt="agency21" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/zameen.png" alt="zameen" class="img-fluid">
+                    </div>
+
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/truckitin.png" alt="trucktin" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/indrive.png" alt="indrive" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/careem.png" alt="careem" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/daraz.png" alt="daraz" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/bykea.png" alt="bykea" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/ptcl.png" alt="optcl" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/graana.png" alt="graana" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/agency21.jpg" alt="agency21" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/zameen.png" alt="zameen" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Process -->
+    <section class="our-process">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3" style="color: var(--primary);">Our Production Process</h2>
+                    <p class="lead">A structured approach to building powerful brands</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <div class="offer-icon"><i class="fas fa-search"></i></div>
+                        <h4 class="mt-4">Discovery</h4>
+                        <p>We learn about your brand, audience, and objectives to inform our content strategy.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-1">
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <div class="offer-icon"><i class="fas fa-chess"></i></div>
+                        <h4 class="mt-4">Planning</h4>
+                        <p>We develop a comprehensive content plan with clear goals and metrics for success.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-2">
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <div class="offer-icon"><i class="fas fa-pencil-alt"></i></div>
+                        <h4 class="mt-4">Identity Creation</h4>
+                        <p>We develop visual and verbal brand elements that bring the strategy to life.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-3">
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <div class="offer-icon"><i class="fas fa-rocket"></i></div>
+                        <h4 class="mt-4">Implementation</h4>
+                        <p>We help you launch and maintain your brand across all touchpoints.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Strategy -->
+    <section class="content-strategy">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3" style="color: var(--primary);">Strategic Content Approach</h2>
+                    <p class="lead">How we develop content that delivers results</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="strategy-visual">
+                        <h4 class="mb-4">Our Content Strategy Framework</h4>
+                        <div class="strategy-node">
+                            <h5>Audience Research</h5>
+                            <p>Understanding your target audience's needs and preferences</p>
+                        </div>
+                        <div class="strategy-node">
+                            <h5>Content Planning</h5>
+                            <p>Developing a roadmap for content creation and distribution</p>
+                        </div>
+                        <div class="strategy-node">
+                            <h5>Production Excellence</h5>
+                            <p>Creating high-quality content that resonates with your audience</p>
+                        </div>
+                        <div class="strategy-node">
+                            <h5>Performance Analysis</h5>
+                            <p>Measuring results and optimizing for continuous improvement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll delay-1">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Content Strategy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-section p-5">
+                <div class="cta-content">
+                    <h2 class="mb-4">Ready to build your brand?</h2>
+                    <p class="lead mb-4">Let's work together to create marketing strategies that deliver real results.
+                    </p>
+                    <a href="contact-us.html" class="btn btn-light btn-lg">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
+                    <h4 class="text-white mb-4">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100"
+                            class="me-2 align-middle" />
+                    </h4>
+                    <p>
+                        We are a full-service marketing agency dedicated to helping
+                        businesses grow and thrive in the digital age.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2 footer-links">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="public-relations.html">Public Relations</a></li>
+                        <li><a href="brand-strategy.html">Brand Strategy</a></li>
+                        <li><a href="creative-services.html">Creative Service</a></li>
+                        <li><a href="marketing-and-communication.html">Marketing & Communication</a></li>
+                        <li><a href="content-and-production.html">Content and Production</a></li>
+                        <li><a href="website-and-app-development.html">Website & App Development</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="media-strategies-and-buying.html">Media Strategies & Buying</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Office#211 ,2nd Floor,Aura Square, <br> F11
+                            Markaz, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone me-2"></i>+92 302 5098887</li>
+                        <li><i class="fas fa-envelope me-2"></i> bricklinks.marketing@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Cutom JS-->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careem Case Study | BrickLinks Marketing</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="./css/master.css">
+   
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-1.png" alt="BrickLinks Marketing Agency Logo" width="80" height="80" class="me-2">
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropdown" role="button" href="#">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="AboutDropdown">
+                            <li><a class="dropdown-item" href="about.html"><i class="fas fa-users me-2"></i>About Us</a>
+                            </li>
+                            <li><a class="dropdown-item" href="our-clients.html"><i
+                                        class="fas fa-handshake me-2"></i>Our Clients</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html"><i
+                                        class="fas fa-comment-dots me-2"></i>Testimonials</a></li>
+                            <li><a class="dropdown-item" href="blog.html"><i class="fas fa-blog me-2"></i>Our Blogs</a>
+                            </li>
+                            <li><a class="dropdown-item" href="team.html"><i class="fas fa-users me-2"></i>Our Team</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Marketing Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="MarketingDropdown" role="button" href="#">
+                            Marketing
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="MarketingDropdown">
+                            <li><a class="dropdown-item" href="digital-marketing.html"><i
+                                        class="fas fa-paint-brush me-2"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="social-media-marketing.html"><i
+                                        class="fas fa-code me-2"></i>Social Media Marketing</a></li>
+                            <li><a class="dropdown-item" href="performance-marketing.html"><i
+                                        class="fas fa-mobile-alt me-2"></i>Performance Marketing</a></li>
+                            <li><a class="dropdown-item" href="offline-marketing.html"><i
+                                        class="fa-solid fa-square-poll-vertical me-2"></i>Offline Marketing</a></li>
+                            <li><a class="dropdown-item" href="marketing-and-communication.html"><i
+                                        class="fas fa-search me-2"></i>Marketing & Communication</a></li>
+                            <li><a class="dropdown-item" href="media-strategies-and-buying.html"><i
+                                        class="fas fa-ad me-2"></i>Media Strategies & Buying</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Creative Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CreativeDropdown" role="button" href="#">
+                            Creative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="CreativeDropdown">
+                            <li><a class="dropdown-item" href="creative-services.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Creative Services</a></li>
+                            <li><a class="dropdown-item" href="brand-strategy.html"><i
+                                        class="fas fa-bullseye me-2"></i>Brand Strategies</a></li>
+                            <li><a class="dropdown-item" href="public-relations.html"><i
+                                        class="fas fa-bullhorn me-2"></i>Public Relations</a></li>
+                            <li><a class="dropdown-item" href="content-and-production.html"><i
+                                        class="fas fa-film me-2"></i>Content and Production</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Web Design Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="WebDesignDropdown" role="button" href="#">
+                            Web Design
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="WebDesignDropdown">
+                            <li><a class="dropdown-item" href="website-and-app-development.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Website & App Development</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Portfolio Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="PortfolioDropdown" role="button" href="#">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                            <li><a class="dropdown-item" href="portfolio.html"><i class="fas fa-briefcase me-2"></i>Our
+                                    Portfolio</a></li>
+                            <li><a class="dropdown-item" href="case-study-truckitin.html"><i
+                                        class="fas fa-truck-moving me-2"></i>Case Study Truckitin</a></li>
+                            <li><a class="dropdown-item" href="case-study-indrive.html"><i
+                                        class="fas fa-car-side me-2"></i>Case Study InDrive</a></li>
+                            <li><a class="dropdown-item" href="case-study-careem.html"><i
+                                        class="fas fa-taxi me-2"></i>Case Study Careem</a></li>
+                            <li><a class="dropdown-item" href="case-study-haochi.html"><i
+                                        class="fas fa-cocktail me-2"></i>Case Study Haochi</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+
+                    <!-- Get Started Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary d-block" href="contact-us.html">Get Started</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+92 302 5098887" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Case Study Hero Section -->
+    <section class="case-study3-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h1 class="display-4 fw-bold mb-4 animate-on-scroll">Careem: Transforming Transportation</h1>
+                    <p class="lead mb-5 animate-on-scroll delay-1">How BrickLinks helped Careem expand its market presence and enhance brand
+                        loyalty through strategic marketing initiatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge & Solution Section -->
+    <section class="challenge-solution-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title animate-on-scroll">The Challenge & Our Solution</h2>
+                    <p class="lead animate-on-scroll delay-1">Understanding the problem and implementing effective strategies</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="challenge-card animate-on-scroll">
+                        <h3 class="mb-4"><i class="fas fa-exclamation-circle me-2"
+                                style="color: #ff4757;"></i> The Challenge</h3>
+                        <p>Careem faced intense competition in the ride-hailing market and needed to
+                            differentiate itself while expanding across diverse Middle Eastern markets with varying
+                            cultural norms, languages, and consumer behaviors.</p>
+                        <ul class="mt-4">
+                            <li class="mb-2">Low brand recognition compared to global competitors</li>
+                            <li class="mb-2">Cultural barriers in different regional markets</li>
+                            <li class="mb-2">High customer acquisition costs</li>
+                            <li class="mb-2">Need for localized marketing approaches</li>
+                            <li>Driver recruitment and retention challenges</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="solution-card animate-on-scroll delay-1">
+                        <h3 class="mb-4"><i class="fas fa-lightbulb me-2" style="color: var(--primary);"></i>
+                            Our Solution</h3>
+                        <p>BrickLinks developed a comprehensive, hyper-localized marketing strategy
+                            that respected cultural nuances while maintaining brand consistency across all markets.</p>
+                        <ul class="mt-4">
+                            <li class="mb-2">Developed region-specific campaigns for each market</li>
+                            <li class="mb-2">Created a multi-tier referral program to drive organic growth</li>
+                            <li class="mb-2">Implemented data-driven optimization of marketing spend</li>
+                            <li class="mb-2">Designed culturally relevant content for all channels</li>
+                            <li>Built strategic partnerships with local businesses and events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel & Bullets Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="mb-4 animate-on-scroll" style="color: var(--primary);">Our Approach</h2>
+                    <ul class="bullet-list">
+                        <li class="animate-on-scroll">Developed hyper-localized marketing campaigns for each region with cultural sensitivity</li>
+                        <li class="animate-on-scroll delay-1">Created a referral program that increased user acquisition by 65% while reducing costs</li>
+                        <li class="animate-on-scroll delay-2">Implemented data-driven optimization of marketing spend across all channels</li>
+                        <li class="animate-on-scroll">Designed culturally relevant content for social media channels in multiple languages</li>
+                        <li class="animate-on-scroll delay-1">Built strategic partnerships with local businesses and events to increase brand visibility</li>
+                        <li class="animate-on-scroll delay-2">Optimized the user onboarding experience for higher conversion and retention rates</li>
+                        <li class="animate-on-scroll">Developed targeted driver recruitment campaigns to expand service coverage</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div id="careemCarousel" class="carousel slide animate-on-scroll" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#careemCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#careemCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#careemCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://dxbapps.com/blogimages/careem-app-development-cost.jpg"
+                                    class="d-block w-100 carousel-img" alt="Careem Marketing Campaign">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://gulfbusiness.com/wp-content/uploads/2021/12/Careem-Quik.jpg"
+                                    class="d-block w-100 carousel-img" alt="Careem App Interface">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://assets.bizclikmedia.net/1800/a7a624723c6c9b538fd241e3ddad23e2:8a4d15bc4e2bed8e6190fc24b73d619c/c-plus-delivery-3-e21014b302.webp"
+                                    class="d-block w-100 carousel-img" alt="Careem Driver Partners">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#careemCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#careemCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="modern-gallery">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Project Gallery</h2>
+            <p class="section-subtitle animate-on-scroll delay-1">Explore our creative work</p>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item -->
+                <div class="gallery-item animate-on-scroll">
+                    <img src="" alt="Brand Identity">
+                </div>
+
+                <div class="gallery-item animate-on-scroll delay-1">
+                    <img src=""  alt="Brand Identity">
+                </div>
+
+                <div class="gallery-item animate-on-scroll delay-2">
+                    <img src="" alt="Digital Campaign">
+                </div>
+
+                <div class="gallery-item animate-on-scroll">
+                    <img src="" alt="Digital Campaign">
+                </div>
+                <div class="gallery-item animate-on-scroll delay-1">
+                    <img src=""  alt="Brand Identity">
+                </div>
+                <div class="gallery-item animate-on-scroll delay-2">
+                    <img src=""  alt="Brand Identity">
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src=""  alt="Brand Identity">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image & Bullets Section -->
+    <section class="image-bullets-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfjqBFMhhjfyFDCY2vRKuh8IZdgslXjmiaQ&s">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4 animate-on-scroll" style="color: var(--primary);">Key Strategies</h2>
+                    <ul class="bullet-list">
+                        <li class="animate-on-scroll">Localized campaign messaging for each market's cultural nuances and language preferences</li>
+                        <li class="animate-on-scroll delay-1">Optimized digital channels based on regional user behavior patterns and platform preferences</li>
+                        <li class="animate-on-scroll delay-2">Developed a multi-tier referral program to drive organic growth and reduce acquisition costs</li>
+                        <li class="animate-on-scroll">Created region-specific promotional offers and discounts tailored to local spending habits</li>
+                        <li class="animate-on-scroll delay-1">Implemented rigorous A/B testing for all marketing creatives and copy to maximize engagement</li>
+                        <li class="animate-on-scroll delay-2">Built a comprehensive content calendar aligned with local holidays, events, and cultural moments</li>
+                        <li class="animate-on-scroll">Established clear KPIs and tracking mechanisms for each marketing initiative to measure ROI</li>
+                        <li class="animate-on-scroll delay-1">Developed targeted driver recruitment campaigns to ensure service availability met demand</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Stats Section -->
+    <section class="stats1-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat1-item animate-on-scroll">
+                        <span class="stat1-value">180%</span>
+                        <span class="stat1-label">User Growth</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat1-item animate-on-scroll delay-1">
+                        <span class="stat1-value">2.5M</span>
+                        <span class="stat1-label">Users</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat1-item animate-on-scroll delay-2">
+                        <span class="stat1-value">68%</span>
+                        <span class="stat1-label">Brand Recall</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat1-item animate-on-scroll delay-3">
+                        <span class="stat1-value">40%</span>
+                        <span class="stat1-label">Cost Reduction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-section p-5">
+                <div class="cta-content">
+                    <h2 class="mb-4 animate-on-scroll">Ready to build your brand?</h2>
+                    <p class="lead mb-4 animate-on-scroll delay-1">Let's work together to create marketing strategies that deliver real results.</p>
+                    <a href="contact-us.html" class="btn btn-light btn-lg animate-on-scroll delay-2">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
+                    <h4 class="text-white mb-4">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100"
+                            class="me-2 align-middle" />
+                    </h4>
+                    <p>
+                        We are a full-service marketing agency dedicated to helping
+                        businesses grow and thrive in the digital age.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2 footer-links">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="public-relations.html">Public Relations</a></li>
+                        <li><a href="brand-strategy.html">Brand Strategy</a></li>
+                        <li><a href="creative-services.html">Creative Service</a></li>
+                        <li><a href="marketing-and-communication.html">Marketing & Communication</a></li>
+                        <li><a href="content-and-production.html">Content and Production</a></li>
+                        <li><a href="website-and-app-development.html">Website & App Development</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="media-strategies-and-buying.html">Media Strategies & Buying</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Office#211 ,2nd Floor,Aura Square, <br> F11
+                            Markaz, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone me-2"></i>+92 302 5098887</li>
+                        <li><i class="fas fa-envelope me-2"></i> bricklinks.marketing@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

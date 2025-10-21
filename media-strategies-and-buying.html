@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Strategies & Buying Services | BrickLinks Marketing</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-1.png" alt="BrickLinks Marketing Agency Logo" width="80" height="80" class="me-2">
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropdown" role="button" href="#">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="AboutDropdown">
+                            <li><a class="dropdown-item" href="about.html"><i class="fas fa-users me-2"></i>About Us</a>
+                            </li>
+                            <li><a class="dropdown-item" href="our-clients.html"><i
+                                        class="fas fa-handshake me-2"></i>Our Clients</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html"><i
+                                        class="fas fa-comment-dots me-2"></i>Testimonials</a></li>
+                            <li><a class="dropdown-item" href="blog.html"><i class="fas fa-blog me-2"></i>Our Blogs</a>
+                            </li>
+                            <li><a class="dropdown-item" href="team.html"><i class="fas fa-users me-2"></i>Our Team</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Marketing Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="MarketingDropdown" role="button" href="#">
+                            Marketing
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="MarketingDropdown">
+                            <li><a class="dropdown-item" href="digital-marketing.html"><i
+                                        class="fas fa-paint-brush me-2"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="social-media-marketing.html"><i
+                                        class="fas fa-code me-2"></i>Social Media Marketing</a></li>
+                            <li><a class="dropdown-item" href="performance-marketing.html"><i
+                                        class="fas fa-mobile-alt me-2"></i>Performance Marketing</a></li>
+                            <li><a class="dropdown-item" href="offline-marketing.html"><i
+                                        class="fa-solid fa-square-poll-vertical me-2"></i>Offline Marketing</a></li>
+                            <li><a class="dropdown-item" href="marketing-and-communication.html"><i
+                                        class="fas fa-search me-2"></i>Marketing & Communication</a></li>
+                            <li><a class="dropdown-item" href="media-strategies-and-buying.html"><i
+                                        class="fas fa-ad me-2"></i>Media Strategies & Buying</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Creative Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CreativeDropdown" role="button" href="#">
+                            Creative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="CreativeDropdown">
+                            <li><a class="dropdown-item" href="creative-services.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Creative Services</a></li>
+                            <li><a class="dropdown-item" href="brand-strategy.html"><i
+                                        class="fas fa-bullseye me-2"></i>Brand Strategies</a></li>
+                            <li><a class="dropdown-item" href="public-relations.html"><i
+                                        class="fas fa-bullhorn me-2"></i>Public Relations</a></li>
+                            <li><a class="dropdown-item" href="content-and-production.html"><i
+                                        class="fas fa-film me-2"></i>Content and Production</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Web Design Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="WebDesignDropdown" role="button" href="#">
+                            Web Design
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="WebDesignDropdown">
+                            <li><a class="dropdown-item" href="website-and-app-development.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Website & App Development</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Portfolio Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="PortfolioDropdown" role="button" href="#">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                            <li><a class="dropdown-item" href="portfolio.html"><i class="fas fa-briefcase me-2"></i>Our
+                                    Portfolio</a></li>
+                            <li><a class="dropdown-item" href="case-study-truckitin.html"><i
+                                        class="fas fa-truck-moving me-2"></i>Case Study Truckitin</a></li>
+                            <li><a class="dropdown-item" href="case-study-indrive.html"><i
+                                        class="fas fa-car-side me-2"></i>Case Study InDrive</a></li>
+                            <li><a class="dropdown-item" href="case-study-careem.html"><i
+                                        class="fas fa-taxi me-2"></i>Case Study Careem</a></li>
+                            <li><a class="dropdown-item" href="case-study-haochi.html"><i
+                                        class="fas fa-cocktail me-2"></i>Case Study Haochi</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+
+                    <!-- Get Started Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary d-block" href="contact-us.html">Get Started</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="serviceMed-hero">
+        <div class="container serviceMed-hero-content">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Media Strategies & Buying</li>
+                        </ol>
+                    </nav>
+                    <h1 class="serviceMed-hero-title animate-on-scroll">Media Strategies & Buying</h1>
+                    <p class="lead animate-on-scroll delay-1">Strategic media planning and buying to ensure your message
+                        reaches the right audience at the right time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+92 302 5098887" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll">
+                    <h2 class="mb-4">Maximize Your Media Impact</h2>
+                    <p class="lead mb-4">We develop data-driven media strategies that deliver your message to the right
+                        audience through the most effective channels.</p>
+                    <p>Our media buying expertise ensures you get the best value for your investment, with optimized
+                        placements that drive results. We combine traditional and digital media approaches to create
+                        comprehensive campaigns that reach your target audience wherever they are.</p>
+                    <div class="mt-5">
+                        <a href="contact-us.html" class="btn btn-primary me-3">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll delay-1">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Media Planning">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="what-we-offer" id="services">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3" style="color: var(--primary);">Our Media Services</h2>
+                    <p class="lead">Comprehensive media solutions to amplify your message</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Media Strategy</h4>
+                        <p>Data-driven media planning that aligns with your business objectives and target audience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-1">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h4>Media Buying</h4>
+                        <p>Negotiating and purchasing media space across traditional and digital channels.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-2">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-analytics"></i></div>
+                        <h4>Performance Analysis</h4>
+                        <p>Measuring and optimizing media performance to maximize ROI and campaign effectiveness.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-tv"></i></div>
+                        <h4>Traditional Media</h4>
+                        <p>TV, radio, print, and outdoor advertising placements that reach broad audiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-1">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-digital-tachograph"></i></div>
+                        <h4>Digital Media</h4>
+                        <p>Programmatic buying, social media, and online display advertising campaigns.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-2">
+                    <div class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h4>Audience Targeting</h4>
+                        <p>Precise audience segmentation and targeting to reach your ideal customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Channels Tabs -->
+    <section class="media-channels">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3">Media Channels We Master</h2>
+                    <p class="lead">Comprehensive media solutions across all channels</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="channel-tabs">
+                        <button class="channel-tab active" data-channel="digital">Digital Media</button>
+                        <button class="channel-tab" data-channel="tv">TV & Radio</button>
+                        <button class="channel-tab" data-channel="print">Print Media</button>
+                        <button class="channel-tab" data-channel="outdoor">Outdoor & OOH</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+
+                    <!-- Digital -->
+                    <div class="channel-content active" id="digital-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Digital Media</h3>
+                                <p>We leverage the power of digital channels to reach your audience with precision and
+                                    measure results in real-time.</p>
+                                <ul>
+                                    <li>Programmatic advertising across display, video, and mobile</li>
+                                    <li>Social media advertising on all major platforms</li>
+                                    <li>Search engine marketing and remarketing campaigns</li>
+                                    <li>Influencer marketing and content partnerships</li>
+                                    <li>Email marketing and newsletter sponsorships</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1470&q=80"
+                                    alt="Digital Media" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TV & Radio -->
+                    <div class="channel-content" id="tv-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>TV & Radio Advertising</h3>
+                                <p>We create impactful TV and radio campaigns that build brand awareness and reach mass
+                                    audiences.</p>
+                                <ul>
+                                    <li>National and local TV spot buying</li>
+                                    <li>Radio advertising across talk, music, and news stations</li>
+                                    <li>Streaming audio and video platform placements</li>
+                                    <li>Sponsorship opportunities and product placements</li>
+                                    <li>Performance tracking and audience measurement</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://plus.unsplash.com/premium_photo-1723701630582-b2d418fd7e4b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHYlMjAlMjYlMjByYWRpbyUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"
+                                    alt="TV & Radio" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Print Media -->
+                    <div class="channel-content" id="print-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Print Media</h3>
+                                <p>We design print campaigns that reinforce your brand and reach targeted audiences.</p>
+                                <ul>
+                                    <li>Newspaper and magazine ad placements</li>
+                                    <li>Advertorials and sponsored stories</li>
+                                    <li>Custom inserts and brochures</li>
+                                    <li>Localized print advertising</li>
+                                    <li>Performance tracking with unique CTAs</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=1470&q=80"
+                                    alt="Print Media" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outdoor -->
+                    <div class="channel-content" id="outdoor-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Outdoor & OOH</h3>
+                                <p>We deliver impactful outdoor campaigns that create lasting impressions in
+                                    high-traffic areas.</p>
+                                <ul>
+                                    <li>Billboards, hoardings, and transit ads</li>
+                                    <li>Digital out-of-home (DOOH) screens</li>
+                                    <li>Street furniture and airport advertising</li>
+                                    <li>Event and experiential activations</li>
+                                    <li>Location-based targeting and analytics</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?auto=format&fit=crop&w=1470&q=80"
+                                    alt="Outdoor Media" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Performance Charts -->
+    <section class="performance-charts">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3" style="color: var(--primary);">Media Performance Metrics</h2>
+                    <p class="lead">Data-driven results from our media campaigns</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 animate-on-scroll">
+                    <div class="chart-container">
+                        <h4 class="chart-title">ROI By Media Channel</h4>
+                        <div class="chart" id="roiChart">
+                            <div class="chart-bar" style="height: 0px;" data-height="180">
+                                <div class="chart-value">360%</div>
+                                <div class="chart-label">Digital</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="150">
+                                <div class="chart-value">300%</div>
+                                <div class="chart-label">TV</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="120">
+                                <div class="chart-value">240%</div>
+                                <div class="chart-label">Radio</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="90">
+                                <div class="chart-value">180%</div>
+                                <div class="chart-label">Print</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="140">
+                                <div class="chart-value">280%</div>
+                                <div class="chart-label">OOH</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-on-scroll delay-1">
+                    <div class="chart-container">
+                        <h4 class="chart-title">Audience Reach By Channel</h4>
+                        <div class="chart" id="reachChart">
+                            <div class="chart-bar" style="height: 0px;" data-height="160">
+                                <div class="chart-value">80%</div>
+                                <div class="chart-label">TV</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="140">
+                                <div class="chart-value">70%</div>
+                                <div class="chart-label">Digital</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="100">
+                                <div class="chart-value">50%</div>
+                                <div class="chart-label">Radio</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="80">
+                                <div class="chart-value">40%</div>
+                                <div class="chart-label">Print</div>
+                            </div>
+                            <div class="chart-bar" style="height: 0px;" data-height="120">
+                                <div class="chart-value">60%</div>
+                                <div class="chart-label">OOH</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Strategies & Buying Process -->
+    <section class="our-process">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3" style="color: var(--primary);">Our Media Strategies & Buying Process</h2>
+                    <p class="lead">A results-driven approach to planning, negotiating, and optimizing your media
+                        investments</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <div class="offer-icon"><i class="fas fa-search-dollar"></i></div>
+                        <h4 class="mt-4">Market Research</h4>
+                        <p>We analyze audience behavior, competitor activities, and media trends to guide buying
+                            decisions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-1">
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <div class="offer-icon"><i class="fas fa-bullseye"></i></div>
+                        <h4 class="mt-4">Strategy Development</h4>
+                        <p>We design a tailored media strategy that ensures maximum reach, efficiency, and ROI.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-2">
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <div class="offer-icon"><i class="fas fa-handshake"></i></div>
+                        <h4 class="mt-4">Media Buying</h4>
+                        <p>We negotiate with media partners to secure the best placements at the most competitive rates.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll delay-3">
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <div class="offer-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4 class="mt-4">Optimization & Reporting</h4>
+                        <p>We continuously track, measure, and optimize campaigns to maximize effectiveness and
+                            performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-section p-5">
+                <div class="cta-content">
+                    <h2 class="mb-4">Ready to build your brand?</h2>
+                    <p class="lead mb-4">Let's work together to create marketing strategies that deliver real results.
+                    </p>
+                    <a href="contact-us.html" class="btn btn-light btn-lg">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
+                    <h4 class="text-white mb-4">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100"
+                            class="me-2 align-middle" />
+                    </h4>
+                    <p>
+                        We are a full-service marketing agency dedicated to helping
+                        businesses grow and thrive in the digital age.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2 footer-links">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="public-relations.html">Public Relations</a></li>
+                        <li><a href="brand-strategy.html">Brand Strategy</a></li>
+                        <li><a href="creative-services.html">Creative Service</a></li>
+                        <li><a href="marketing-and-communication.html">Marketing & Communication</a></li>
+                        <li><a href="content-and-production.html">Content and Production</a></li>
+                        <li><a href="website-and-app-development.html">Website & App Development</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="media-strategies-and-buying.html">Media Strategies & Buying</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Office#211 ,2nd Floor,Aura Square, <br> F11
+                            Markaz, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone me-2"></i>+92 302 5098887</li>
+                        <li><i class="fas fa-envelope me-2"></i> bricklinks.marketing@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Cutom JS-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

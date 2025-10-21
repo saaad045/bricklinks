@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickLinks Marketing | Projects</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/master.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+ <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-1.png" alt="BrickLinks Marketing Agency Logo" width="80" height="80" class="me-2">
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropdown" role="button" href="#">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="AboutDropdown">
+                            <li><a class="dropdown-item" href="about.html"><i class="fas fa-users me-2"></i>About Us</a>
+                            </li>
+                            <li><a class="dropdown-item" href="our-clients.html"><i
+                                        class="fas fa-handshake me-2"></i>Our Clients</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html"><i
+                                        class="fas fa-comment-dots me-2"></i>Testimonials</a></li>
+                            <li><a class="dropdown-item" href="blog.html"><i class="fas fa-blog me-2"></i>Our Blogs</a>
+                            </li>
+                            <li><a class="dropdown-item" href="team.html"><i class="fas fa-users me-2"></i>Our Team</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Marketing Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="MarketingDropdown" role="button" href="#">
+                            Marketing
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="MarketingDropdown">
+                            <li><a class="dropdown-item" href="digital-marketing.html"><i
+                                        class="fas fa-paint-brush me-2"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="social-media-marketing.html"><i
+                                        class="fas fa-code me-2"></i>Social Media Marketing</a></li>
+                            <li><a class="dropdown-item" href="performance-marketing.html"><i
+                                        class="fas fa-mobile-alt me-2"></i>Performance Marketing</a></li>
+                            <li><a class="dropdown-item" href="offline-marketing.html"><i
+                                        class="fa-solid fa-square-poll-vertical me-2"></i>Offline Marketing</a></li>
+                            <li><a class="dropdown-item" href="marketing-and-communication.html"><i
+                                        class="fas fa-search me-2"></i>Marketing & Communication</a></li>
+                            <li><a class="dropdown-item" href="media-strategies-and-buying.html"><i
+                                        class="fas fa-ad me-2"></i>Media Strategies & Buying</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Creative Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CreativeDropdown" role="button" href="#">
+                            Creative
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="CreativeDropdown">
+                            <li><a class="dropdown-item" href="creative-services.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Creative Services</a></li>
+                            <li><a class="dropdown-item" href="brand-strategy.html"><i
+                                        class="fas fa-bullseye me-2"></i>Brand Strategies</a></li>
+                            <li><a class="dropdown-item" href="public-relations.html"><i
+                                        class="fas fa-bullhorn me-2"></i>Public Relations</a></li>
+                            <li><a class="dropdown-item" href="content-and-production.html"><i
+                                        class="fas fa-film me-2"></i>Content and Production</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Web Design Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="WebDesignDropdown" role="button" href="#">
+                            Web Design
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="WebDesignDropdown">
+                            <li><a class="dropdown-item" href="website-and-app-development.html"><i
+                                        class="fas fa-lightbulb me-2"></i>Website & App Development</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Portfolio Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="PortfolioDropdown" role="button" href="#">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                            <li><a class="dropdown-item" href="portfolio.html"><i class="fas fa-briefcase me-2"></i>Our
+                                    Portfolio</a></li>
+                            <li><a class="dropdown-item" href="case-study-truckitin.html"><i
+                                        class="fas fa-truck-moving me-2"></i>Case Study Truckitin</a></li>
+                            <li><a class="dropdown-item" href="case-study-indrive.html"><i
+                                        class="fas fa-car-side me-2"></i>Case Study InDrive</a></li>
+                            <li><a class="dropdown-item" href="case-study-careem.html"><i
+                                        class="fas fa-taxi me-2"></i>Case Study Careem</a></li>
+                            <li><a class="dropdown-item" href="case-study-haochi.html"><i
+                                        class="fas fa-cocktail me-2"></i>Case Study Haochi</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+
+                    <!-- Get Started Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary d-block" href="contact-us.html">Get Started</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="projects-hero section1">
+        <div class="container projects-hero-content">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <br>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+                        </ol>
+                    </nav>
+                    <h1 class="projects-hero-title animate-on-scroll">Our Portfolio</h1>
+                    <p class="lead animate-on-scroll delay-1">Showcasing our successful collaborations and creative
+                        solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+92 302 5098887" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!--Back-to-top-->
+    <button id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Portfolio Projects Section-->
+    <section class="newsection animate-on-scroll delay-3" id="portfolio">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="newsection-title">Featured Work</h2>
+                    <p class="newsection-desc">Explore our diverse portfolio of successful projects</p>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="portfolioproject-filters">
+                        <button class="portfolioproject-filter active" data-filter="all">All</button>
+                        <button class="portfolioproject-filter" data-filter="web-design">Digital Marketing</button>
+                        <button class="portfolioproject-filter" data-filter="web-development">Brand Strategy</button>
+                        <button class="portfolioproject-filter" data-filter="app-development">Creative Service</button>
+                        <button class="portfolioproject-filter" data-filter="digital-marketing">Public
+                            Relations</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="row portfolioproject-grid">
+                <!-- Project 1 -->
+                <div class="portfolioproject-item animate-on-scroll web-design digital-marketing">
+                    <div class="portfoliocard">
+                        <div class="portfoliocard-imgcontainer">
+                            <img src="./img/truckitin-1.png" alt="E-commerce Website" class="portfoliocard-img">
+                            <div class="portfoliocard-overlay">
+                                <div class="portfoliocard-links">
+                                    <a href="case-study-truckitin.html" class="portfoliocard-link"><i
+                                            class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfoliocard-content">
+                            <h3 class="portfoliocard-title">Case Study for TRUCKITIN</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolioproject-item animate-on-scroll delay-1 app-development">
+                    <div class="portfoliocard">
+                        <div class="portfoliocard-imgcontainer">
+                            <img src="./img/indrive.png" alt="Fitness App" class="portfoliocard-img">
+                            <div class="portfoliocard-overlay">
+                                <div class="portfoliocard-links">
+                                    <a href="case-study-indrive.html" class="portfoliocard-link"><i
+                                            class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfoliocard-content">
+                            <h3 class="portfoliocard-title">Case Study for INDRIVE</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolioproject-item animate-on-scroll delay-2 web-development">
+                    <div class="portfoliocard">
+                        <div class="portfoliocard-imgcontainer">
+                            <img src="./img/careeem-1.svg" alt="Real Estate Platform" class="portfoliocard-img">
+                            <div class="portfoliocard-overlay">
+                                <div class="portfoliocard-links">
+                                    <a href="case-study-careem.html" class="portfoliocard-link"><i
+                                            class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfoliocard-content">
+                            <h3 class="portfoliocard-title">Case Study for Careem</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolioproject-item animate-on-scroll delay-1 digital-marketing">
+                    <div class="portfoliocard">
+                        <div class="portfoliocard-imgcontainer">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaL23GDYgme6eybnG90usBP8udoEkccDNbjA&s"
+                                alt="Digital Marketing Campaign" class="portfoliocard-img">
+                            <div class="portfoliocard-overlay">
+                                <div class="portfoliocard-links">
+                                    <a href="case-study-haochi.html" class="portfoliocard-link"><i class="fas fa-link"></i></a>
+                                    <a href="case-study-haochi.html" class="portfoliocard-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfoliocard-content">
+                            <h3 class="portfoliocard-title">Case Study for Haochi</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 
+                <div class="portfolioproject-item animate-on-scroll delay-2 web-design">
+                    <div class="portfoliocard">
+                        <div class="portfoliocard-imgcontainer">
+                            <img src="#"
+                                alt="" class="portfoliocard-img">
+                            <div class="portfoliocard-overlay">
+                                <div class="portfoliocard-links">
+                                    <a href="#" class="portfoliocard-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="portfoliocard-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfoliocard-content">
+                            <h3 class="portfoliocard-title">##</h3>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!-- Project 6 
+                <div class="portfolioproject-item animate-on-scroll delay-3 app-development">
+                    <div class="portfoliocard">
+                        <div class="portfoliocard-imgcontainer">
+                            <img src=""
+                                alt="" class="portfoliocard-img">
+                            <div class="portfoliocard-overlay">
+                                <div class="portfoliocard-links">
+                                    <a href="#" class="portfoliocard-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="portfoliocard-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfoliocard-content">
+                            <h3 class="portfoliocard-title">##</h3>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!--Interactive Map-->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Our Projects in Pakistan</h2>
+            <p class="section-subtitle" style="color: white;">Explore our presence across major cities</p>
+            <div class="map-container">
+                <div id="map"></div>
+                <button class="mobile-cities-toggle">Cities</button>
+                <div class="cities-panel">
+                    <h3>Our Cities</h3>
+                    <ul class="cities-list">
+                        <li data-city="islamabad">Islamabad</li>
+                        <li data-city="lahore">Lahore</li>
+                        <li data-city="karachi">Karachi</li>
+                        <li data-city="faisalabad">Faisalabad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="modern-gallery">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <p class="section-subtitle">Explore our creative work</p>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="./careem/1.jpeg" alt="Brand Identity">
+                    
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./careem/2.jpeg" alt="Mobile App">
+                    
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./careem/3.jpeg" alt="Digital Campaign">
+                   
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./careem/4.jpeg" alt="Digital Campaign">
+                    
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/5.jpeg" alt="Mobile App">
+                    
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/10.jpeg" alt="Mobile App">
+                    
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/11.jpeg" alt="Mobile App">
+                    
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/6.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/7.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/8.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/9.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/12.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/13.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="./careem/14.jpeg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 
+    <section class="section-padding section3">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <p class="lead">What our clients say about working with us</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "BrickLinks transformed our online presence completely. Their web design and SEO
+                                services helped us increase conversions by 150% in just three months."
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    alt="Michael Johnson" class="testimonial-avatar">
+                                <div class="testimonial-info">
+                                    <h5>Michael Johnson</h5>
+                                    <p>CEO, TechSolutions Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 animate-on-scroll delay-1">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The team at BrickLinks understood our vision perfectly. Their app development services
+                                delivered a product that exceeded our expectations."
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    alt="Sarah Williams" class="testimonial-avatar">
+                                <div class="testimonial-info">
+                                    <h5>Sarah Williams</h5>
+                                    <p>Founder, HealthTrack</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 animate-on-scroll delay-2">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "Their digital marketing strategies have been a game-changer for our business. We've
+                                seen a 200% increase in qualified leads since partnering with BrickLinks."
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                    alt="Robert Chen" class="testimonial-avatar">
+                                <div class="testimonial-info">
+                                    <h5>Robert Chen</h5>
+                                    <p>Marketing Director, Nova Retail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Trusted Companies Section -->
+    <section class="companies-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title animate-on-scroll welcome-title" style="color: var(--primary);">Companies
+                        that Trusted Us</h2>
+                    <p class="lead animate-on-scroll" style="color: white;">Trusted by Leading Companies</p>
+                </div>
+            </div>
+
+            <div class="scrolling-banner-container">
+                <div class="scrolling-banner">
+                    <!-- First set of logos -->
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/truckitin.png" alt="trucktin" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/indrive.png" alt="indrive" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/careem.png" alt="careem" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/daraz.png" alt="daraz" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/bykea.png" alt="bykea" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/ptcl.png" alt="optcl" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/graana.png" alt="graana" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/agency21.jpg" alt="agency21" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/zameen.png" alt="zameen" class="img-fluid">
+                    </div>
+
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/truckitin.png" alt="trucktin" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/indrive.png" alt="indrive" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/careem.png" alt="careem" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/daraz.png" alt="daraz" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/bykea.png" alt="bykea" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/ptcl.png" alt="optcl" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/graana.png" alt="graana" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/agency21.jpg" alt="agency21" class="img-fluid">
+                    </div>
+                    <div class="company-logo animate-on-scroll">
+                        <img src="./img/zameen.png" alt="zameen" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-section p-5">
+                <div class="cta-content">
+                    <h2 class="mb-4">Ready to build your brand?</h2>
+                    <p class="lead mb-4">Let's work together to create marketing strategies that deliver real results.
+                    </p>
+                    <a href="contact-us.html" class="btn btn-light btn-lg">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
+                    <h4 class="text-white mb-4">
+                        <img src="./img/logo-1.png" alt="BrickLinks Logo" width="100" height="100"
+                            class="me-2 align-middle" />
+                    </h4>
+                    <p>
+                        We are a full-service marketing agency dedicated to helping
+                        businesses grow and thrive in the digital age.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-1 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0 animate-on-scroll delay-2 footer-links">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="public-relations.html">Public Relations</a></li>
+                        <li><a href="brand-strategy.html">Brand Strategy</a></li>
+                        <li><a href="creative-services.html">Creative Service</a></li>
+                        <li><a href="marketing-and-communication.html">Marketing & Communication</a></li>
+                        <li><a href="content-and-production.html">Content and Production</a></li>
+                        <li><a href="website-and-app-development.html">Website & App Development</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="media-strategies-and-buying.html">Media Strategies & Buying</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 animate-on-scroll delay-3 footer-links">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Office#211 ,2nd Floor,Aura Square, <br> F11
+                            Markaz, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone me-2"></i>+92 302 5098887</li>
+                        <li><i class="fas fa-envelope me-2"></i> bricklinks.marketing@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 BrickLinks Marketing. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+    <!--Leaflet Js-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!--JS for Map-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize map
+            var map = L.map("map").setView([30.3753, 69.3451], 5);
+
+            // Tile Layer (OpenStreetMap Free)
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Custom icon
+            var customIcon = L.divIcon({
+                className: 'custom-marker',
+                iconSize: [24, 24]
+            });
+
+            // City markers with more details
+            var cities = [
+                {
+                    name: "Islamabad",
+                    coords: [33.6844, 73.0479],
+                    projects: 5,
+                    description: "Capital city with ongoing infrastructure projects"
+                },
+                {
+                    name: "Lahore",
+                    coords: [31.5497, 74.3436],
+                    projects: 8,
+                    description: "Cultural hub with multiple residential developments"
+                },
+                {
+                    name: "Karachi",
+                    coords: [24.8607, 67.0011],
+                    projects: 12,
+                    description: "Economic center with commercial and housing projects"
+                },
+                {
+                    name: "Faisalabad",
+                    coords: [31.418, 73.079],
+                    projects: 3,
+                    description: "Industrial city with new manufacturing facilities"
+                }
+            ];
+
+            // Add markers to map
+            cities.forEach(city => {
+                L.marker(city.coords, { icon: customIcon }).addTo(map)
+                    .bindPopup(`
+                        <b>${city.name}</b><br>
+                        Projects: ${city.projects}<br>
+                        ${city.description}
+                    `);
+            });
+
+            // City list functionality
+            document.querySelectorAll('.cities-list li').forEach(item => {
+                item.addEventListener('click', function () {
+                    const cityName = this.getAttribute('data-city');
+                    const city = cities.find(c => c.name.toLowerCase() === cityName);
+
+                    if (city) {
+                        map.setView(city.coords, 10);
+
+                        // Open popup after a short delay
+                        setTimeout(() => {
+                            map.eachLayer(layer => {
+                                if (layer instanceof L.Marker) {
+                                    const markerCoords = layer.getLatLng();
+                                    if (markerCoords.lat === city.coords[0] && markerCoords.lng === city.coords[1]) {
+                                        layer.openPopup();
+                                    }
+                                }
+                            });
+                        }, 500);
+
+                        // On mobile, hide the panel after selection
+                        if (window.innerWidth <= 575) {
+                            document.querySelector('.cities-panel').classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Mobile toggle functionality
+            document.querySelector('.mobile-cities-toggle').addEventListener('click', function () {
+                document.querySelector('.cities-panel').classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Portfolio filtering functionality
+            const filterButtons = document.querySelectorAll('.portfolioproject-filter');
+            const portfolioItems = document.querySelectorAll('.portfolioproject-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    // Get filter value
+                    const filterValue = button.getAttribute('data-filter');
+
+                    // Filter portfolio items
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all') {
+                            item.classList.remove('hidden');
+                        } else if (item.classList.contains(filterValue)) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // Project card hover effect enhancement
+            const projectCards = document.querySelectorAll('.portfoliocard');
+
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
